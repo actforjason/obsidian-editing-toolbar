@@ -11,8 +11,6 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "types": ["node"],

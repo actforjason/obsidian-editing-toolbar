@@ -16,7 +16,7 @@ export default {
   input: "src/plugin/main.ts",
   output: {
     dir: "./Editing-Toolbar-Test-Vault/.obsidian/plugins/editing-toolbar",
-    sourcemap: "inline",
+    sourcemap: isProd ? false : "inline",
     sourcemapExcludeSources: isProd,
     format: "cjs",
     exports: "default",
@@ -29,7 +29,7 @@ export default {
       browser: true,
     }),
     commonjs({ include: "node_modules/**" }),
-    terser(),
+    isProd && terser(),
     styles()
   ],
 };
